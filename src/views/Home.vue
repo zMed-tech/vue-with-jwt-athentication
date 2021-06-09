@@ -1,16 +1,13 @@
 <template>
   <div class="home">
-    <Authenticate />
+    <h1>Home</h1>
+    <router-link :to="{ name: 'User' }">User</router-link> ||||
+    <router-link :to="{ name: 'Login' }">Login</router-link>
   </div>
 </template>
 
 <script>
-import Authenticate from "@/components/Authenticate.vue";
-
 export default {
   name: "Home",
-  components: {
-    Authenticate,
-  },
 };
 </script>
