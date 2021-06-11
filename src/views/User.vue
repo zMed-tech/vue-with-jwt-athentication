@@ -7,6 +7,9 @@
   </div>
   <div v-else>
     <p>Loading ....</p>
+    <div>
+      <button @click="signOut">Se Deconnecter</button>
+    </div>
   </div>
 </template>
 
@@ -23,7 +26,11 @@ export default {
     const { data } = await axios.get("http://localhost:3000/user", {
       headers: { authorization: "Bearer " + localStorage.getItem("key") },
     });
-    this.user = data;
+    if (data != "err") {
+      this.user = data;
+    } else {
+      this.user = null;
+    }
   },
 
   methods: {
