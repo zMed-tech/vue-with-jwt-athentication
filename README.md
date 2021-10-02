@@ -1,4 +1,4 @@
-# authentication-jwt
+# vue-with-jwt-athentication
 
 ## Project setup
 ```
@@ -7,12 +7,18 @@ yarn install
 
 ### Compiles and hot-reloads for development
 ```
-yarn serve
+yarn serve 
 ```
 
 ### Compiles and minifies for production
 ```
 yarn build
+```
+
+### running server 
+```
+go to build dir 
+yarn start
 ```
 
 ### Lints and fixes files
